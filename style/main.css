@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+    --main-font:'Arimo', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base */
+
+body{
+    background-color: var(--preto);
+    font-family: var(--main-font);
+    color: #fff;
+}
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.container > a {
+    margin:0;
+}
+
+header .logo{
+    width: 92px;
+    margin: 0 50px 0 20px ;
+}
+
+.nav1{
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 200px;
+}
+
+.nav2{
+    display: flex;
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    align-items: center;
+    padding: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    padding-right: 20px;
+}
+
+header nav a:hover{
+    opacity: 80%;
+}
+header nav a:focus{
+    color: #fff;
+}
+
+
+/* Estilo Filme Destaque */
+
+.filme-destaque{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) , url('../assets/capa-destaque-mad-max.png');
+    height: 580px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-destaque .container, .botoes{
+    margin-left: 35px;
+}
+
+.filme-destaque .descricao-destaque{
+    margin-bottom:40px;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 560px;
+    text-shadow: 3px 3px 8px #000000a4;
+}
+
+.titulo-destaque {
+    font-size: 45px;
+    margin-bottom: 18px;
+    text-shadow: 3px 3px 8px #00000071;
+}
+
+.botaoplay{
+    padding: 18px 25px 18px 25px;
+    line-height: 20px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    margin-right: 8px;
+    cursor: pointer;
+    transition: .3s ease all;
+    
+}
+
+
+.botaoplay:hover{
+    background-color: #bdbdbd ;
+ }
+
+.botaoinfo{
+    background-color: #8b8b8ba6 ;
+    color: #fff;
+    padding: 18px 25px 18px 25px;
+    line-height: 20px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    margin-right: 8px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botaoinfo:hover{
+   background-color: #5c5c5c96 ;
+}
+
+.botoes i{
+    margin-right: 8px;
+}
+
+.box-miniaturas{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+/* Estilo Barra de Séries */
+
+.lista-vazia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.title-series, .title-filmes, .title-bombando{
+    padding: 10px 35px;
+    font-family: var(--main-font);
+}
+
+/* Estilo Footer */
+
+footer{
+    position: relative;
+    height: 100px;
+    font-size: 14px;
+    color: gray;
+}
+
+.footer-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+
+.assinatura, a{
+    margin: auto;
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover{
+    color: #cfcfcf;
+}
+
